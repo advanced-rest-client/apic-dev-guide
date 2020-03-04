@@ -2,7 +2,7 @@
 
 We try to make it as easy for you to start coding API Components. However, some steps has to be taken before jumping into the code. It will make it easy for you and us to understand each other while filing a pull request.
 
-* We recommend using Unix based OS \(Ubuntu, MacOS\) as the tooling for this platforms is just better.
+* We recommend using Unix based OS \(Ubuntu, MacOS\) as the tooling for these platforms is just better.
 * You need to have [node](https://nodejs.org) installed on your development machine.
 * Install [git](https://git-scm.com/) as well.
 * You may use any web components library you want. But make sure the library does not pollute global namespace and can be used with the most popular build systems.
