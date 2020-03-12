@@ -18,3 +18,11 @@
 * [Component initialization](development/component-initialization.md)
 * [Authorization](development/authorization.md)
 
+## Demoing
+
+* [Introduction](demoing/introduction.md)
+* [Building a demo page](demoing/building-a-demo-page.md)
+* [Styling the demo page](demoing/styling-the-demo-page.md)
+* [Building an API demo page](demoing/building-an-api-demo-page.md)
+* [arc-interactive-demo element](demoing/arc-interactive-demo-element.md)
+
