@@ -1,4 +1,12 @@
+---
+description: The page describes use of "ApiDemoPage" class to build demo page for an API.
+---
+
 # Building an API demo page
+
+{% hint style="info" %}
+This document describes use of the @advanced-rest-client/arc-demo-helper version &gt;= 2.1.0
+{% endhint %}
 
 To build an API related demo page use `ApiDemoPage` class as a base class for the demo page. It extends `DemoPage` class but adds additional UI and logic into it. The `ApiDemoPage` adds the following logic and UI:
 
@@ -8,6 +16,8 @@ To build an API related demo page use `ApiDemoPage` class as a base class for th
 * Navigation selection handling
 
 On top of the configuration options available for `DemoPage` and overriding view generation method you should also override `_navChanged()` method that is called when a navigation occurs. 
+
+Finally the `ApiDemoPage` class mixes in `AmfHelperMixin` into the class' prototype. All helper's methods are available in the class.
 
 ## Minimal example
 
