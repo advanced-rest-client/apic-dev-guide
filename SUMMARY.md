@@ -10,6 +10,7 @@
 * [API Components architecture overview](start-here/api-components-architecture-overview.md)
 * [API components development process](start-here/api-components-development-process.md)
 * [Code style](start-here/code-style.md)
+* [Types](start-here/types.md)
 * [CI](ci.md)
 * [API components publishing process](api-components-publishing-process.md)
 

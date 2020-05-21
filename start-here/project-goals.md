@@ -4,11 +4,11 @@ The actual order is not important. A number next to the goal name is used just t
 
 ## \#1 Interoperability
 
-The components are designed in a way to maximize interoperability and to reduce custom code while using the components in different environments. The components has to work in any web environment: web platform or electron or similar application. This also includes build tools. The components are designed in a way to enable use any web build tools that understand custom elements.
+The components are designed to maximize interoperability and to reduce custom code while using the components in different environments. The components vale to work in any web environment: web platform, electron, or similar application. This also includes build tools. The components are designed to enable use of any web build tools that understand custom elements.
 
 ## \#2 Performance
 
-The components are not a hole application, they are part of much bigger thing. It is important to remember that a single component can't impact performance in any sense. Developers who will use the components in their applications will expect that it will not impact overall performance of their application. Performance is defined by the following metrics:
+The components are not an application, they are part of a bigger thing. It is important to remember that a single component can't impact performance in any way. Developers who will use the components in their projects will expect that it will not impact overall performance of their application. Performance is defined by the following metrics:
 
 * computation time \(less CPU cycles the better\)
 * memory usage \(less memory used the better\)
