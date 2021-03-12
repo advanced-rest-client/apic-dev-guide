@@ -8,13 +8,12 @@
 * [Project goals](start-here/project-goals.md)
 * [Components development principles](start-here/components-development-principles.md)
 * [API Components architecture overview](start-here/api-components-architecture-overview.md)
+* [API Component repository workflow](start-here/api-component-repository-workflow.md)
 * [API components development process](start-here/api-components-development-process.md)
 * [Code style](start-here/code-style.md)
 * [Types](start-here/types.md)
 * [Contributing](start-here/contributing.md)
 * [Guidelines for reviewers](start-here/guidelines-for-reviewers.md)
-* [CI](ci.md)
-* [API components publishing process](api-components-publishing-process.md)
 
 ## Development
 

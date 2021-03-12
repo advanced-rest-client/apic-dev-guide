@@ -2,7 +2,7 @@
 
 ## Bootstrapping a project
 
-API Components uses [open-wc recommendations](https://open-wc.org/). Be sure to read this documentation first.
+We use [open-wc recommendations](https://open-wc.org/). Be sure to read their documentation first.
 
 To bootstrap the component's project use the following command:
 
@@ -10,37 +10,9 @@ To bootstrap the component's project use the following command:
 npm init @open-wc
 ```
 
-Select `demoing` and `testing` option when creating the project.
-
-This will create a new project with predefined configuration for linter, git, commits, and testing.
-
-API components uses Sauce Labs instead of recommended BrowserStack. Because of that manual copy of SL configuration files is required. API Components are also required to build TS interface.
-
-Copy the following files to your project:
-
-* [karma.sl.config.js](https://github.com/advanced-rest-client/arc-dev-guide/blob/master/resources/karma.sl.config.js)
-* [.travis.yml](https://github.com/advanced-rest-client/arc-dev-guide/blob/master/resources/.travis.yml)
-
-Add the following entries to your `package.json` file
-
-```text
-{
-  "devDependencies": {
-    "@advanced-rest-client/testing-karma-sl": "^1.0.2",
-    "@polymer/gen-typescript-declarations": "^1.6.1"
-  },
-  "scripts": {
-    "update-types": "gen-typescript-declarations --deleteExisting --outDir .",
-    "test:sl": "karma start karma.sl.config.js --compatibility auto --coverage"
-  }
-}
-```
-
-The `test:sl` command runs when push to any branch is executed. You have to generate own keys for SauceLabs and put them into `.travis.yml`. Use [Travis CLI](https://docs.travis-ci.com/user/encryption-keys/) to do this.
-
 ## Developing
 
-Well, it's up to you how you going to develop the component. However, follow the following rules.
+Well, it's up to you how you going to develop your component. However, follow the following rules.
 
 **Use the same code style**. See [Code style ](code-style.md)documentation for more information. It makes it easier for everyone to use the same code styling. Especially it is important for linters. Commit may be accepted in your development environment but rejected in another if linter configuration is different. That makes collaboration very hard to do.
 
@@ -63,8 +35,6 @@ The demo page is a part of the development process. It is required for all API C
 First reason is the you as the author can design a better component. You can visually inspect the component and debug it. Try to create different demo states like with different options enabled or with different composition of the components. If the element has a label or text input then create a demo case that has `dir="ltr"` attribute.
 
 Ideally would be having a demo page that applies different styles via CSS variables and CSS parts. Try to create a dark theme of the component. This is helpful to predict which styling API to expose before publishing the element.
-
-Second reason is that the catalogue application, that lists all API Components, renders a demo page for the component. This allows authors to pick a component they need for their task.
 
 Use open-wc recommendations for [demoing](https://open-wc.org/demoing/) if you don't have your own system.
 

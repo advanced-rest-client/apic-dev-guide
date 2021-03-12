@@ -14,32 +14,6 @@ The simplest way of getting started with a new  component is to run
 npm init @open-wc
 ```
 
-To manually upgrade an existing component:
-
-Remove ARC's linting configuration files:
-
-* .eslintignore
-* .eslintrc.js
-* commitlint.config.js
-* gen-tsd.json
-* husky.config.js
-* prettier.config.js
-
-Add dependencies
-
-```text
-npm i -D @open-wc/eslint-config eslint eslint-config-prettier prettier typescript typescript-lit-html-plugin
-```
-
-Remove the following dependencies:
-
-* @advanced-rest-client/eslint-config
-* @advanced-rest-client/prettier-config
-* @commitlint/cli
-* @commitlint/config-conventional
-* @polymer/gen-typescript-declarations
-* karma \(it's installed with open-wc/testing-karma\)
-
 Add the following configuration to the `package.json` file:
 
 ```text
@@ -63,10 +37,6 @@ Add the following configuration to the `package.json` file:
       }
     ]
   },
-  "prettier": {
-    "singleQuote": true,
-    "arrowParens": "always"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -74,8 +44,7 @@ Add the following configuration to the `package.json` file:
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "prettier --write"
+      "eslint --fix"
     ]
   }
 ```
